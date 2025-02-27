@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1>Shopping Cart</h1>
+
+    <h2>Select PC PARTS</h2>
+    <ul id="cartlist">
+        <li><input type="checkbox" id="item1" value="16799.44" onclick="addItem(this)"> CPU - ₱16,799.44</li>
+        <li><input type="checkbox" id="item2" value="27999.44" onclick="addItem(this)"> GPU - ₱27,999.44</li>
+        <li><input type="checkbox" id="item3" value="4479.44" onclick="addItem(this)"> RAM (16GB) - ₱4,479.44</li>
+        <li><input type="checkbox" id="item4" value="8399.44" onclick="addItem(this)"> Motherboard - ₱8,399.44</li>
+        <li><input type="checkbox" id="item5" value="5599.44" onclick="addItem(this)"> SSD (1TB) - ₱5,599.44</li>
+        <li><input type="checkbox" id="item6" value="3299.44" onclick="addItem(this)"> Power Supply - ₱3,299.44</li>
+        <li><input type="checkbox" id="item7" value="2799.44" onclick="addItem(this)"> Case - ₱2,799.44</li>
+
+    </ul>
+
+    <table id="cart">
+
+         <tr>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Action</th>
+         </tr>
+    </table>
+
+    <h3>Total Price: <span id="totalPrice">₱0.00</span> </h3>
+</div>
+</body>
+</html>
